@@ -29,7 +29,7 @@ body {
 	color: #ffffff;
 	font-family: OpenSans-Bold, arial;
 	text-transform: uppercase;
-	text-align: center;		
+	/*text-align: center;*/		
 	display: flex;
 	position: relative;
 }
@@ -47,6 +47,8 @@ body {
   	margin-right: auto;
   	margin-left: auto;
   	padding-top: 50px; /*al*/
+  	padding-bottom: 110px; /*al*/
+
     position: relative;
   	z-index: 1;
   	color: #ffffff;
@@ -63,28 +65,33 @@ body {
 	margin-left: 0;	     /*al*/
 	margin-right: 0;     /*al*/
 }
-
 .header-title {
+	padding: 0;
+	margin: 0;
 	display: flex; 
 	flex-wrap: wrap;
 	text-transform: uppercase;
 	font-size: 90px;
 	line-height: 100px;
+
+}
+.header-title-right {	   
+	padding-left: 440px;	
 }
 
-.header-title-right {
-	margin-left: 440px;	
-}
-
-
+a {text-decoration: none; /* Отменяем подчеркивание у ссылки */}
 
 .socials_articles {
-	width: 730px;
+	width: 820px;
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: auto;
   	margin-left: auto;
   	text-align: left;	
+  	justify-content: center;
+}
+.indent_for_reference {
+	margin-right: 50px; /**al***/
 }
 .socials_items {
 	width: 310px;
@@ -93,26 +100,33 @@ body {
 	border: 1px solid #5e42b0;
 	border-radius: 38px;
 	background-color: #5e42b0;
-	margin-left: 25px;
-	margin-right: 25px;
+	/*margin-left: 25px;
+	margin-right: 25px;******al*/
 	font-family: OpenSans-Bold, arial;
 	font-size: 14px;
 	font-style: normal;
-    text-decoration: none; /* Отменяем подчеркивание у ссылки */
     color: #ffffff;
+    padding-left: 38px;
+	padding-top: 10px;
+	padding-right:20px;
 }
 .icon {
-	margin-left: 38px;
+	/*margin-left: 38px;
 	margin-top: 10px;
-	margin-right:20px;
+	margin-right:20px;******al******/
 	width: 50px;
 	height: 50px;
 	fill: #ffffff;
 }
+.socials-item {
+	padding-top: 10px;
+	padding-left: 20px;
+}
 .socials-item-link:first-child{
-	margin-top: 16px;
+	/*margin-top: 16px;******al*******/
 	font-size: 14px;
 	font-family: OpenSans-Regular, arial;
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
 
 
@@ -126,6 +140,7 @@ body {
 }
 .footballer_img {
 	width: 50rem;
+	margin-top: 30px;
 }
 .athlet {
 	position: absolute;
@@ -133,10 +148,12 @@ body {
 	right: calc(50% + 45px);
 }
 .conteiner_items {
- 	margin-top: 110px;
+ 	padding-top: 110px; /*****al*****/
  }
+
 .section_title {
-	margin-left: 50%;
+	margin-top: 0px;
+	padding-left: 50%;
  	margin-bottom: 50px;
 	text-transform: uppercase;	
 	font-family: OpenSans-Bold, arial;
@@ -144,20 +161,9 @@ body {
 	line-height: 60px;
 	color: #e7e7e7;
 }
-.conteiner_item {
-	margin-block-start: 0px;
-    margin-block-end: 0px;
-	list-style-type: none; 
-	margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
-.conteiner_item_links {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin-left: 50%;
-}
 .conteiner_title {
-	display: inline-flex; 
+	display: inline-flex;
+	padding-left: 50%;
 }
 .number_rectangl {
 	display:flex;
@@ -209,6 +215,7 @@ body {
 	font-family: OpenSans-Regular, arial;
 	color: #000000;	
 	letter-spacing: 1px;
+	padding-left: 50%;
 }
 .conteiner_news_3 {
 	max-width: 710px;
@@ -217,12 +224,25 @@ body {
 	font-family: OpenSans-Regular, arial;
 	color: #ffffff;	
 	letter-spacing: 1px;
+	padding-left: 50%;
+}
+.color_1 {
+	background-color: #ffffff;
+	padding-top: 50px;
+	padding-bottom: 35px;
 }
 .color_2 {
-	background-color: #f6f4fa; 
+	background-color: #f6f4fa;
+	padding-top: 50px;
+	padding-bottom: 35px;
 }
 .color_3 {
-	background-color: #5e42b0;
+	background-color: #5e42b0;	
+	padding-top: 50px;
+	padding-bottom: 35px;
+}
+h3 {
+	margin: 0;
 }
 /************************************* basketballer *****************/
 .basketballer_img {
@@ -235,10 +255,12 @@ body {
 }
 .color_4 {
 	background-color:  #0a0e34;
+	padding-top: 50px;
+	padding-bottom: 35px;
 }
 .number_connection_4 {
 	font-size: 18px;
-	color: #ffffff;/*#4e418d;*/
+	color: #9173e6;
 	font-family: OpenSans-Bold, arial;
 }
 .number_connection_4::after {
@@ -250,41 +272,61 @@ body {
 	background-color: #efefef;			     
 }
 .section_title_basket {
-	margin-left: calc(50% - 710px);
+	padding-left: calc(50% - 710px);
 	text-transform: uppercase;	
 	font-family: OpenSans-Bold, arial;
 	font-size: 80px;
 	line-height: 60px;
 	color: #e7e7e7;
-	margin-top: 110px;
 	margin-bottom: 50px;
 }
-.conteiner_item_links_basket {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin-left: calc(50% - 710px);
+.conteiner_title_basket {
+	display: inline-flex;
+	padding-left: calc(50% - 710px);
+}
+.conteiner_news_basket {
+	max-width: 710px;
+	text-transform: none;
+	font-size: 20px;
+	font-family: OpenSans-Regular, arial;
+	color: #000000;	
+	letter-spacing: 1px;
+	padding-left: calc(50% - 710px);
+}
+.conteiner_news_3_basket {
+	max-width: 710px;
+	text-transform: none;
+	font-size: 20px;
+	font-family: OpenSans-Regular, arial;
+	color: #ffffff;	
+	letter-spacing: 1px;
+	padding-left: calc(50% - 710px);
 }
 /************************************* be_active === work it *****************/
-.conteiner_items_be_active {
- 	margin-top:0px;	
- }
+.conteiner_be_active  {
+	width: 100%;
+	padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .be_active_img {
-	width: 960px;
+	width: 50%;
 }
 .be_active {
-	/*position: absolute;
-	right: 50%;*/
-	width: 960px;
+	width: 100%;
 }
 .be_active_text {
 	display: flex;
 	flex-wrap: wrap;
-	width: 960px;/*50rem;*/
-	padding-top: 200px;
-	padding-bottom: 196px;
+	width: 50%;
+	/*align-items: center;*/
+	flex-direction: column;
+	justify-content: center;
 }
 .be_active_text_inline {
 	display: flex;
+	align-items: center;
 }
 .section_title_be_active {
 	text-transform: uppercase;	
@@ -293,6 +335,8 @@ body {
 	line-height: 60px;
 	color: #e7e7e7;
 	padding-left: 45px;
+	margin-block-start: 0;
+    margin-block-end: 0;      
 }
 .conteiner_news_be_active {
 	max-width: 550px;
@@ -302,15 +346,10 @@ body {
 	color: #000000;	
 	letter-spacing: 1px;
 	padding-left: 127px;
-}
-.conteiner_item_links_be_active  {
-	/*margin-left: 50%;*/
-	width: 100%;
-	margin-left: 0;
-    display: flex;
-    flex-direction: row;
-     /*-reverse*/
-    justify-content: center;
+	padding-right: 127px;
+	margin-block-start:0;
+    margin-block-end:0;
+    padding-top: 50px;
 }
 .number_rectangl_be_active {
 	display:flex;
@@ -318,10 +357,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-left: -82px;
-    background: #5e42b0; /* Цвет фона */
+    background:#5e42b0;  /*Цвет фона */
     width: 164px;
     height: 164px;
-        position: relative;
+    position: relative;
   	z-index: 1;
 }
 .number_connection_be_active {
@@ -337,30 +376,25 @@ body {
 	border-radius: 2px;
 	background-color: #8f7bc8;	     
 }
+.conteiner_title_be_active {
+	display: inline-flex;
+}
 /*********************************************find-contact *****************/
-.conteiner_item_links_find_contact  {
+.conteiner_find_contact  {
 	width: 100%;
-	margin-left: 0;
+	padding-left: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
 }
-.find_contact_img {
-	width: 960px;
-}
-.find_contact {
-	width: 960px;
-}
 .find_contact_text {
-	width: 960px;
+	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 200px;
-	padding-bottom: 196px;
 	justify-content: flex-start;
 }
 .find_contact_text_inline {
-	width: 960px;
+	align-items: center;                      
 	display: flex;
 	flex-direction: row-reverse;	
 	justify-content: space-between;
@@ -371,7 +405,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-right: -82px;
-    background: #5e42b0; /* Цвет фона */
+    background: #5e42b0; 
     width: 164px;
     height: 164px;
     position: relative;
@@ -384,6 +418,8 @@ body {
 	line-height: 60px;
 	color: #e7e7e7;
 	padding-left: 127px;
+	margin-block-start:0;
+    margin-block-end:0;
 }
 
 
@@ -413,10 +449,11 @@ body {
 
 
 
+/*********************************************.  footer.   *****************/
 
 .footer {
-	width: 100%;
-	height: 100vh;
+	width: 100%;  
+	min-height: 100vh;  
 	background-image: url(../images/game_1920.jpg);
 	background-repeat: no-repeat;
 	background-position: center 0;
@@ -443,9 +480,9 @@ body {
    position: relative;
    z-index: 1;
    color: #ffffff;
+   padding-top: 210px;
 }
 .footer_container_logo_title {
-	/*margin-top: 225px;*/
 	display: flex;
 	flex-wrap:wrap;
 	align-items: center;
@@ -453,7 +490,6 @@ body {
 .footer_container_logo {
 	width: 130px;
 	height: 135px;
-	/*border: 1px solid #5e42b0;*/
 	border-radius: 30px;
 	background-color: #5e42b0;
 	display: flex;
@@ -465,7 +501,6 @@ body {
 	height: 90px;
 	fill: #ffffff;
 }
-
 .footer_titles {
 	font-size: 20px;
 	margin-left: 35px;
@@ -474,15 +509,19 @@ body {
 	text-align: left;	
 	text-transform: uppercase;
 	color: #9b8ec1;
+	margin-block-start: 0;
+    margin-block-end: 0;
 }
 .footer_title:first-child {
 	font-size: 55px;
 	font-family: OpenSans-Bold, arial;
 	color: #ffffff;
-}
+	margin-block-start: 0;
+    margin-block-end: 0;
 
-.header_socials_articles {
-	width: 730px;
+}
+.footer_socials_articles {
+	width: 820px;
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 150px;
@@ -490,6 +529,7 @@ body {
   	margin-left: auto;
   	margin-bottom: 250px;
   	text-transform: uppercase;
+  	justify-content: center;
 }
 
 
