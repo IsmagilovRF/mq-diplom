@@ -873,10 +873,10 @@ h3 {
 	.footer_title:first-child {
 		font-size: 32px;
 	}
-.footer_socials_articles {
-	max-width:280px;
-	margin-top:0px;
-  	margin-bottom:80px;
+	.footer_socials_articles {
+		max-width:280px;
+		margin-top:0px;
+  		margin-bottom:80px;
 	}
 }
 
